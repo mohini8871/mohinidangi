@@ -1,14 +1,142 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>GitHub Pages Demo</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohini Dangi | Portfolio</title>
+<style>
+body {
+  margin:0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+nav {
+  display:flex;
+  justify-content:space-between;
+  padding:20px;
+  background:#020617;
+  position:sticky;
+  top:0;
+}
+nav a {
+  color:#38bdf8;
+  text-decoration:none;
+  margin:0 10px;
+}
+.hero {
+  height:90vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+.hero h1 {
+  font-size:3rem;
+  animation: fadeIn 2s ease-in-out;
+}
+.hero p {
+  opacity:0.7;
+}
+section {
+  padding:60px 20px;
+  max-width:900px;
+  margin:auto;
+}
+.card {
+  background:#1e293b;
+  padding:20px;
+  margin:15px 0;
+  border-radius:12px;
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: scale(1.03);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.card {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 20px;
+  transition: 0.3s;
+}
+
+@keyframes fadeIn {
+  from {opacity:0; transform: translateY(20px);} 
+  to {opacity:1; transform: translateY(0);} 
+}
+footer {
+  text-align:center;
+  padding:20px;
+  background:#020617;
+}
+</style>
 </head>
 <body>
-  <h1>🚀 GitHub Pages Demo</h1>
-  <button onclick="loadUser()">Load GitHub User</button>
-  <div id="card"></div>
 
-  <script src="script.js"></script>
+<nav>
+<div>Mohini</div>
+<div>
+<a href="#about">About</a>
+<a href="#research">Research</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<div class="hero">
+<h1><span id="typing"></span></h1>
+<p>MTech + PhD @ IIT Guwahati | AI & Formal Methods</p>
+</div>
+
+<section id="about">
+<h2>About</h2>
+<p>Researcher focused on Automata Theory, Cyber-Physical Systems, and AI-guided reasoning. Passionate about combining theory with real-world systems.</p>
+</section>
+
+<section id="research">
+<h2>Research & Experience</h2>
+<div class="card">
+<h3>Research Assistant - BHU</h3>
+<p>Worked on disaster management smart city project using data-driven models.</p>
+</div>
+<div class="card">
+<h3>Teaching Assistant</h3>
+<p>Taught Data Analytics and created educational content.</p>
+</div>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+<div class="card">
+<h3>Temperature Forecasting</h3>
+<p>ML/DL models for pre-monsoon prediction.</p>
+</div>
+<div class="card">
+<h3>Exam Cheating Detection</h3>
+<p>Custom dataset + action classification.</p>
+</div>
+<div class="card">
+<h3>Earthquake Prediction</h3>
+<p>CNN + LSTM for seismic signals.</p>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p>Email: d.mohini@iitg.ac.in</p>
+<p>Website: mohinidangi.in</p>
+</section>
+
+<footer>
+<p>© 2026 Mohini Dangi</p>
+</footer>
+
 </body>
 </html>
